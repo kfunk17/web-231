@@ -5,7 +5,7 @@
 
 var firstName;
 
-firstName ="Karie";
+firstName = "Karie";
 
 console.log(firstName);
 

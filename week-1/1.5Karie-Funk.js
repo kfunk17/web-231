@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Assignment 1.5
+; Author: Karie Funk
+; Date: 04 June 2019
+; Modified By: Karie Funk
+; Description: This program demonstrates the
+; use of JavaScript types, values, and
+; and variables in an application.
+;===========================================
+*/ 
 
 //First Name
 var firstName = "Joey";

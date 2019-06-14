@@ -1,6 +1,6 @@
 /*
 ============================================================
-; Title:  Assignment 2.4 Pattern Matching Functions
+; Title:  Assignment 3.2 Pattern Matching Functions
 ; Author: Karie Funk
 ; Date:   12 June 2019
 ; Description: Creating a function with if or else statements

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Exercise 8.2</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+<style type="text/css"> body{font-family: 'Roboto', sans-serif;}
+
+ul {list-style: none; margin: 0 auto; padding-bottom: 20px;}
+
+.top-bar{background-color: limegreen;}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-bar">This is the top bar.</div>
+
+<script>
+
+var fruits = [ [1, "Apple"], [2, "Orange"], [3, "Pineapple"], [4, "Banana"] ];
+
+var output = "<h1>List of Fruits</h1><ul>";
+
+for (var x = 0; x < fruits.length; x++) {output += "<li>" + fruits[x];}
+
+output += "";
+
+</script>
+
+<div id="fruits"></div>
+
+<script>
+
+document.getElementById('fruits').innerHTML = output;
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style type="text/css">
+
+body{ font-family: 'Roboto', sans-serif; }
+
+.f1{ background-color: lightcoral; }
+
+.f2{ background-color: lightgreen; }
+
+.f3{ background-color: lightcoral; }
+
+.f4{ background-color: lightgreen; }
+
+.f5{ background-color: lightcoral; }
+
+.top-bar{background-color: lightgrey; height: 40px; font-size: 25px; }
+
+.toggle-para{ margin-top:20px; margin-left: 20px; }
+
+.table{ margin-top:20px; margin-left: 20px; }
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="top-bar">jQuery Assignment</div>
+
+<div class="toggle-para">
+
+<h1>An amazing title!</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+  mollit anim id est laborum.</p>
+
+<button id=toggle>Toggle</button>
+
+</div>
+
+<div class="table">
+
+<table>
+    <tr class="f1">
+        <tr class="f1"><td><a href="#" class="fruit">1</a></td><td>strawberry</td>
+    </tr>
+    <tr class="f2">
+        <td><a href="#" class="fruit">2</a></td><td>mango</td>
+    </tr>
+    <tr class="f3">
+        <td><a href="#" class="fruit">3</a></td><td>orange</td>
+    </tr>
+    <tr class="f4">
+        <td><a href="#" class="fruit">4</a></td><td>apricot</td>
+    </tr>
+    <tr class="f5">
+        <td><a href="#" class="fruit">5</a></td><td>watermelon</td>
+    </tr>
+</table>
+
+</div>
+
+<script>
+
+    $(function () {
+        $(".fruit").click(function (event) {
+          event.stopPropagation()
+            var text = $(this).text();
+            var fruits101 = $(this).closest("td").next().text();
+            alert( fruits101);
+        });
+    });
+
+</script>
+
+</body>
+
+</html>
